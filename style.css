@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.navbar {
+    color: #05386B;
+    background-color: #EDF5E1;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 3rem;
+}
+
+/* Section: 1 */
+
+.section__one {
+    background: #EDF5E1;
+    min-height: 91vh;
+    width: 100%;
+    display: grid;
+}
+
+.row {
+    padding-top: 5rem;
+    margin: auto;
+}
+
+.section__one-heading {
+    color: #05386B;
+    font-size: 4rem;
+    font-weight: 500;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.section__one-info {
+    color: #05386B;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    width: 80%;
+    line-height: 1.6;
+    margin-top: 1rem;
+
+}
+
+.consumptionCalculator {
+    width: 80%;
+    margin: auto;
+    background-color: #8EE4AF;
+    padding: 2rem 2rem;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: .8rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+input {
+
+    width: 100%;
+    padding: .7rem .5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.buttons-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #05386B;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    transition: .4s;
+    margin-inline: .3rem;
+}
+
+.fa-solid {
+    color: #fff;
+    padding-left: .5rem;
+}
+
+button:hover {
+    transform: translateY(-5px);
+}
+
+.reset-link {
+    width: 50%;
+    padding: 10px;
+    background-color: #05386B;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    transition: .4s;
+    margin-inline: .3rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+#result {
+    color: #05386B;
+    /* background-color: #8EE4AF; */
+    /* padding: 1rem; */
+    border-radius: 8px;
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: .8px;
+}

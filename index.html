@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Fuel Consumption Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="color: #05386B;" href="#">Fuel Consumption Calculator</a>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- Section: 1 -->
+
+    <section class="section__one">
+        <div class="container section__one-cont">
+            <div class="row mx-0">
+
+                <!-- Left Side -->
+                <div class="col-md-6 section__one-content">
+                    <h1 class="section__one-heading">Fuel Consumption Calculator</h1>
+                    <p class="section__one-info">Use this fuel cost calculator to easily calculate fuel cost
+                        and the
+                        liters needed to complete a trip.</p>
+                    <hr>
+                    <div id="result"></div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-md-6 section__one-calculator">
+                    <div class="consumptionCalculator">
+                        <form id="fuelForm">
+                            <label for="distance">Distance (in km):</label>
+                            <input type="number" id="distance" placeholder="Enter Distance" required>
+
+                            <label for="fuelCost">Cost of Fuel (per liter):</label>
+                            <input type="number" id="fuelCost" placeholder="Enter Cost of Fuel" required>
+
+                            <label for="average">Average Consumption (per liter):</label>
+                            <input type="number" id="average" placeholder="Enter Average Consumption" required>
+
+                            <div class="buttons-list">
+                                <button type="submit">Calculate <i class="fa-solid fa-calculator"></i></button>
+                                <a href="/" class="reset-link">Reset</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/04597dd294.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
