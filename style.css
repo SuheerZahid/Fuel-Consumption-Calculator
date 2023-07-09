@@ -21,9 +21,9 @@
 
 .section__one {
     background: #EDF5E1;
-    min-height: 91vh;
+    min-height: 91.7vh;
     width: 100%;
-    display: grid;
+    padding-bottom: 5rem;
 }
 
 .row {
@@ -129,4 +129,165 @@ button:hover {
     font-weight: 500;
     font-size: 1.5rem;
     letter-spacing: .8px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #05386B;
+    color: #fff;
+    min-height: 35vh;
+}
+
+.footer-cont {
+    padding-block: 1rem;
+}
+
+.footer-content-heading {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.footer-content-info {
+    font-size: 1rem;
+    width: 65%;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.footer-lastLine {
+    font-size: .9rem;
+    padding: 2rem 0 0 0;
+    text-align: center;
+    color: #eee;
+
+}
+
+
+.social-link {
+    margin-top: 2rem;
+    margin-left: .5rem;
+}
+
+.social-link i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.fa-linkedin-in {
+    color: #0077B5 !important;
+    background-color: transparent;
+}
+
+.fa-instagram {
+    color: #E1306C;
+}
+
+.fa-twitter {
+    color: #00ACEE;
+}
+
+.fa-linkedin-in:hover {
+    color: #0077B5 !important;
+    background-color: transparent;
+}
+
+.fa-instagram:hover {
+    color: #E1306C;
+}
+
+.fa-twitter:hover {
+    color: #00ACEE;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .section__one-heading {
+        color: #05386B;
+        font-size: 3.5rem;
+        font-weight: 500;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .consumptionCalculator {
+        width: 100%;
+        margin: auto;
+        background-color: #8EE4AF;
+        padding: 2rem 2rem;
+        border-radius: 8px;
+    }
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .navbar-brand {
+        margin: auto;
+    }
+
+    .row {
+        padding-top: 2.5rem;
+        margin: auto;
+        text-align: center;
+    }
+
+    .section__one-info {
+        width: 90%;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer-content-heading {
+        text-align: center;
+    }
+
+    .footer-content-info {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 416px) {
+    .section__one-heading {
+        font-size: 3rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.15rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    .buttons-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    .reset-link {
+        width: 90%;
+    }
+
+    .footer-content-info {
+        width: 100%;
+        margin: auto;
+    }
+
 }
