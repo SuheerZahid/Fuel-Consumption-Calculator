@@ -1,10 +1,28 @@
-* {
+/* ---- reset ---- */
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font: normal 75% Arial, Helvetica, sans-serif;
 }
 
-/* Header */
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #edf5e1;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* Navbar  */
+
 .navbar {
     color: #05386B;
     background-color: #EDF5E1;
@@ -17,18 +35,24 @@
     margin-left: 3rem;
 }
 
-/* Section: 1 */
+/* Section: One */
 
 .section__one {
-    background: #EDF5E1;
-    min-height: 91.7vh;
     width: 100%;
-    padding-bottom: 5rem;
+    margin: auto;
+    background-color: #edf5e1;
 }
 
-.row {
-    padding-top: 5rem;
+.container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: auto;
+}
+
+.section__one-cont {
+    padding-top: 10rem;
 }
 
 .section__one-heading {
@@ -67,7 +91,6 @@ label {
 }
 
 input {
-
     width: 100%;
     padding: .7rem .5rem;
     border-radius: 5px;
@@ -75,14 +98,8 @@ input {
     margin-bottom: 10px;
 }
 
-.buttons-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 button {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     background-color: #05386B;
     color: white;
@@ -93,32 +110,13 @@ button {
     letter-spacing: 1px;
     transition: .4s;
     margin-inline: .3rem;
-}
-
-.fa-solid {
-    color: #fff;
-    padding-left: .5rem;
 }
 
 button:hover {
     transform: translateY(-5px);
 }
 
-.reset-link {
-    width: 50%;
-    padding: 10px;
-    background-color: #05386B;
-    color: white;
-    border: none;
-    margin-top: 1rem;
-    border-radius: 8px;
-    font-size: 1.25rem;
-    letter-spacing: 1px;
-    transition: .4s;
-    margin-inline: .3rem;
-    text-decoration: none;
-    text-align: center;
-}
+
 
 #result {
     color: #05386B;
@@ -132,74 +130,21 @@ button:hover {
     margin-bottom: 2rem;
 }
 
-/* Footer */
-
-.footer {
-    background-color: #05386B;
-    color: #fff;
-    min-height: 35vh;
-}
-
-.footer-cont {
-    padding-block: 1rem;
-}
-
-.footer-content-heading {
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-.footer-content-info {
-    font-size: 1rem;
-    width: 65%;
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
-}
-
-.footer-lastLine {
-    font-size: .9rem;
-    padding: 2rem 0 0 0;
-    text-align: center;
-    color: #eee;
-
-}
 
 
-.social-link {
-    margin-top: 2rem;
-    margin-left: .5rem;
-}
 
-.social-link i {
-    margin-right: 1rem;
-    font-size: 1.5rem;
-}
 
-.fa-linkedin-in {
-    color: #0077B5 !important;
-    background-color: transparent;
-}
 
-.fa-instagram {
-    color: #E1306C;
-}
 
-.fa-twitter {
-    color: #00ACEE;
-}
 
-.fa-linkedin-in:hover {
-    color: #0077B5 !important;
-    background-color: transparent;
-}
 
-.fa-instagram:hover {
-    color: #E1306C;
-}
 
-.fa-twitter:hover {
-    color: #00ACEE;
-}
+
+
+
+
+
+
 
 
 
@@ -208,12 +153,7 @@ button:hover {
 
 @media only screen and (max-width: 1200px) {
     .section__one-heading {
-        color: #05386B;
         font-size: 3.5rem;
-        font-weight: 500;
-        padding-top: 1rem;
-        margin-bottom: 1rem;
-
     }
 
     .consumptionCalculator {
@@ -228,6 +168,14 @@ button:hover {
 
 
 @media only screen and (max-width: 992px) {
+
+    .container {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+    }
+
     .navbar-brand {
         margin: auto;
     }
@@ -255,8 +203,13 @@ button:hover {
     }
 }
 
+@media only screen and (max-width: 510px) {
+    .section__one-heading {
+        font-size: 3rem;
+        padding-top: 4rem;
+    }
 
-@media only screen and (max-width: 768px) {}
+}
 
 @media only screen and (max-width: 416px) {
     .section__one-heading {
